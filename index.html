@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moonkiss Privacy &amp; Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600;1,700&family=Nunito:wght@500;700;800&display=swap">
+<style>
+/* Layout: one narrow reading column under a night-sky header, with privacy and support as anchored sections. Single dark look to match the app. */
+:root{
+  --night:#0b1033; --midnight:#121a5e; --panel:#1a2470;
+  --rose:#ff5ba3; --blush:#ffc2df; --moon:#ffe3a3;
+  --fg:#eef1ff; --muted:#b9c1ea; --line:rgba(255,194,223,.28);
+  --display:"Cormorant Garamond","Didot","Bodoni 72",Georgia,serif;
+  --body:"Nunito",ui-rounded,-apple-system,system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--fg);font:500 1rem/1.65 var(--body);
+  background-image:radial-gradient(circle at 12% 0%,rgba(255,91,163,.22),transparent 40%),radial-gradient(circle at 100% 30%,rgba(111,155,255,.16),transparent 45%),linear-gradient(180deg,var(--night),var(--midnight) 60%,var(--night));background-attachment:fixed}
+.wrap{max-width:42rem;margin:0 auto;padding-inline:20px;padding-block:28px 64px}
+header{display:flex;align-items:center;gap:18px;padding-block:18px 26px;border-bottom:1px solid var(--line)}
+.moon{width:58px;height:58px;flex:0 0 58px;border-radius:50%;background:radial-gradient(circle at 38% 34%,#fff,var(--moon));box-shadow:0 0 28px rgba(255,227,163,.45);position:relative;overflow:hidden}
+.moon::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--night);transform:translate(38%,-14%)}
+h1{font:italic 700 clamp(2.2rem,7vw,3rem)/1 var(--display);margin:0;letter-spacing:.01em}
+.tag{margin:4px 0 0;color:var(--muted);font-weight:700}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+nav a{color:var(--fg);text-decoration:none;font-weight:800;font-size:.9rem;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04)}
+nav a:hover,nav a:focus-visible{border-color:var(--rose);outline:none;background:rgba(255,91,163,.12)}
+section{padding-top:34px}
+h2{font:italic 700 2rem/1.1 var(--display);margin:0 0 4px;text-wrap:balance}
+.eff{color:var(--muted);font-size:.85rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 18px}
+h3{font-size:1.02rem;font-weight:800;margin:26px 0 6px;color:var(--blush)}
+p,li{color:var(--fg)}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:1.2rem;display:grid;gap:4px}
+.callout{border:1px solid var(--line);background:rgba(26,36,112,.6);border-radius:18px;padding:16px 18px;margin:8px 0 6px}
+.callout strong{color:var(--moon)}
+dl{margin:0;display:grid;gap:14px}
+dt{font-weight:800}
+dd{margin:2px 0 0;color:var(--muted)}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+a{color:var(--blush)}
+@media (prefers-reduced-motion:no-preference){.moon{animation:glow 4s ease-in-out infinite alternate}@keyframes glow{to{box-shadow:0 0 40px rgba(255,227,163,.65)}}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="moon" aria-hidden="true"></div>
+    <div>
+      <h1>Moonkiss</h1>
+      <p class="tag">Couple games for the two of you</p>
+    </div>
+  </header>
+  <nav aria-label="Sections"><a href="#privacy">Privacy policy</a><a href="#support">Support</a></nav>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <p class="eff">Effective 8 October 2026</p>
+    <div class="callout"><strong>The short version:</strong> Moonkiss collects nothing. Everything you do in the app stays on your iPhone. There are no accounts, no ads, no analytics and no servers.</div>
+
+    <h3>What the app stores</h3>
+    <p>To remember your game, Moonkiss saves the following on your device only:</p>
+    <ul>
+      <li>The two player names you type in</li>
+      <li>Scores, streaks, badges and your moon rank</li>
+      <li>Night journal entries, saved dates and cards you write yourselves</li>
+      <li>Your private Secret Yes and Know Me answers</li>
+      <li>Settings such as reminders, the Face ID lock and the app icon choice</li>
+    </ul>
+    <p>None of this is sent to us or to anyone else. If your iPhone backs up to iCloud, this data is included in your own encrypted device backup, which Apple manages and we cannot access.</p>
+
+    <h3>What we collect</h3>
+    <p>Nothing. Moonkiss does not collect, transmit, sell or share any personal data, usage data, device identifiers or location. It contains no third-party analytics, advertising or tracking code.</p>
+
+    <h3>Purchases</h3>
+    <p>Moonkiss is currently free with no purchases. If an optional upgrade is added later, it will be sold through Apple's In-App Purchase: Apple processes the payment, and we never see your payment details or Apple ID.</p>
+
+    <h3>Face ID and notifications</h3>
+    <p>If you turn on the lock, iOS handles Face ID, Touch ID or your passcode. The app never receives your biometric data. Evening reminders are scheduled on your device and never include explicit text.</p>
+
+    <h3>Home screen widget</h3>
+    <p>The widget reads today's spark, your streak and your moon rank from the app's storage on the same device.</p>
+
+    <h3>Deleting your data</h3>
+    <p>Open <b>Us → Settings → Erase all data on this phone</b>, or delete the app. Either removes everything Moonkiss stored.</p>
+
+    <h3>Age</h3>
+    <p>Moonkiss is intended for adults aged 18 and over and is not directed at children.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, we will update this page and its effective date.</p>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p class="eff">Help with Moonkiss</p>
+    <dl>
+      <div><dt>How do we start a game?</dt><dd>Enter both names, confirm you're both 18 or older, then do the Heat Match. Each of you picks a heat privately and the gentler choice is used.</dd></div>
+      <div><dt>Is Moonkiss free?</dt><dd>Yes. Every game is free and unlimited, with no ads and no subscription.</dd></div>
+      <div><dt>Can we hide the app?</dt><dd>Yes. In Settings, turn on the Face ID lock and the discreet app icon. The app also hides itself in the app switcher.</dd></div>
+      <div><dt>A card isn't for us.</dt><dd>Skip it. In Lights Out, tap the hand icon to hide a card for good, or write your own cards under My cards.</dd></div>
+      <div><dt>How do we add the widget?</dt><dd>Touch and hold your Home Screen or Lock Screen, tap Edit, then Add Widget, and choose Moonkiss.</dd></div>
+      <div><dt>Will our progress move to a new iPhone?</dt><dd>Yes, when you restore the new iPhone from a backup of the old one.</dd></div>
+    </dl>
+    <p>Still need help? Email <a href="mailto:shivabhi2103@outlook.com">shivabhi2103@outlook.com</a> and we will reply within two business days.</p>
+  </section>
+
+  <footer>Moonkiss: Couple Games · For adults 18+ · Everything stays on your phone.</footer>
+</div>
+</body>
+</html>
